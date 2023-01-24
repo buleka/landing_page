@@ -1,0 +1,15 @@
+@import 'reset-css';
+@import url('https://fonts.cdnfonts.com/css/montserrat');
+@import './header.scss';
+
+$body-color: red;
+
+body {
+  color: $body-color;
+}
+
+
+.container{
+  max-width: 1800px;
+  margin: 60px;
+}
