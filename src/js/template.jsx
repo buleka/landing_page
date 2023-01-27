@@ -3,11 +3,16 @@ import React from 'react'
 
 import Header from './header.jsx';
 
+
 class Template extends React.Component {
     render() {
         return (
-            <div className={'container'}>
-                <Header/>
+            <div>
+                <div className={'container'}>
+                    <Header/>
+                </div>
+                <main>
+                </main>
             </div>
         )
     }

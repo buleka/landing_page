@@ -1,9 +1,7 @@
-import React from 'react'
-import logo from '../image/logo.svg';
-import menu from '../image/ext-menu.svg';
+import React from 'react';
+import Logo from '../image/logo.svg';
+import Sidebar from './sidebar.jsx';
 
-
-// import ReactDOM from 'ReactDOM';
 
 class Item extends React.Component {
     render() {
@@ -26,26 +24,43 @@ class Header extends React.Component {
     render() {
         return (
             <header className={'header'}>
-                <div className={'logo'}>
-                    <a className={'logo__link'} href={'/'}>Компания
-                        <img className={'logo__image'} src={logo} alt={'Компания'}/>
-                    </a>
+                <div>
+                    Welcome to our online shop
+
+                    English (USD)
+
+                    Login or Sign up
+
                 </div>
+                <div>
+                    <div className={'logo'}>
+                        <a className={'logo__link'} href={'/'}>Компания
+                            <img className={'logo__image'} src={Logo} alt={'Компания'}/>
+                        </a>
+                    </div>
+                    <div>
+                        <input type={'search'}/>
+
+                    </div>
+                    <div>
+                        <a href={'/'}></a>
+                        <a href={'/'}></a>
+                        <a href={'/'}></a>
+                    </div>
+                </div>
+
                 <nav className={'menu'}>
                     <ul className={'menu__list'}>
-                        <Item name={'Главная'} href={'/'} activeState={' menu__link--active'}/>
-                        <Item name={'SOFIT EVENT HOUSE'} href={'/'}/>
-                        <Item name={'МЕРОПРИЯТИЯ'} href={'/'}/>
-                        <Item name={'ТУРИСТАМ'} href={'/'}/>
-                        <Item name={'КЕЙТЕРИНГ'} href={'/'}/>
-                        <Item name={' ДЛЯ АГЕНТСТВ'} href={'/'}/>
+                        <Item name={'HOME'} href={'/'} activeState={' menu__link--active'}/>
+                        <Item name={'SHOP'} href={'/'}/>
+                        <Item name={'BLOG'} href={'/'}/>
+                        <Item name={'ABOUT'} href={'/'}/>
+                        <Item name={'CONTACT US'} href={'/'}/>
                     </ul>
                 </nav>
+
                 <div>
-                    <button className={'menu_button'}>
-                        Меню
-                        <img src={menu}/>
-                    </button>
+                    <Sidebar/>
                 </div>
             </header>
         )

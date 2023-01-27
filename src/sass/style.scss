@@ -6,10 +6,10 @@ $body-color: red;
 
 body {
   color: $body-color;
+  font-style: normal;
 }
 
-
 .container{
-  max-width: 1800px;
-  margin: 60px;
+  width: 1170px;
+  margin: auto;
 }
