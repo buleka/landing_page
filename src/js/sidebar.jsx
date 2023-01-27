@@ -3,8 +3,8 @@ import React from 'react'
 class Item extends React.Component {
     render() {
         return (
-            <li className={'sidebar__item'}>
-                <a className={'sidebar__link' + (this.props.activeState ? this.props.activeState : '')}
+            <li className={'sidebar__item' + (this.props.activeState ? this.props.activeState : '')}>
+                <a className={'sidebar__link'}
                    href={this.props.href}>{this.props.name}</a>
             </li>
         )
@@ -17,7 +17,8 @@ class Sidebar extends React.Component {
             <div>
                 <nav>
                     <ul className={'sidebar__list'}>
-                        <Item name={'All'} href={'/'} activeState={' menu__link--active'}/>
+                        <Item name={'ALL COLLECTIONS'} activeState={' sidebar__item--active'}/>
+                        <Item name={'All'} href={'/'} />
                         <Item name={'New Arrivals'} href={'/'}/>
                         <Item name={'Hot Sale'} href={'/'}/>
                         <Item name={'Furniture'} href={'/'}/>

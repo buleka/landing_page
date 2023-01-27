@@ -1,0 +1,19 @@
+@use 'base';
+
+.menu__list{
+  display: flex;
+  margin-left: 75px;
+}
+
+.menu__item{
+  margin-right: 65px;
+  &:last-child{
+    margin-right: 0;
+  }
+}
+
+.menu__link{
+  font-size: 14px;
+  line-height: 17px;
+  color: $gray;
+}

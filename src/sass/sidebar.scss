@@ -1,0 +1,14 @@
+@use 'base';
+
+.sidebar__list{
+  position: absolute;
+}
+
+.sidebar__item--active{
+  background: $green;
+  height: 67px;
+}
+
+.sidebar__item{
+  height: 41px;
+}

@@ -6,25 +6,24 @@
   border-radius: 8px ;
 }
 
-
 .search{
   box-sizing: border-box;
-  width: 299px;
-  height: 46px;
-  padding: 0 25px;
+  width: 403px;
+  height: 42px;
+  padding: 0 22px;
   border: 0;
   border-radius: 8px ;
 }
 
 .search__select{
-  height: 46px;
+  height: 42px;
   width: 123px;
   box-sizing: border-box;
   border: 0;
   font-size: 14px;
   line-height: 17px;
   color: $gray;
-  padding-left: 10px;
+  padding-left: 4px;
 }
 
 .search__sep{
@@ -38,7 +37,7 @@
 
   &:after{
     content: '';
-    height: 46px;
+    height: 42px;
     position: absolute;
     display: block;
     background: rgba(227, 227, 227, 0.78);
@@ -53,7 +52,7 @@
 
 
 .search__button{
-  height: 46px;
+  height: 42px;
   box-sizing: border-box;
   width: 55px;
   background: $green;

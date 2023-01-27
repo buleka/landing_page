@@ -10,6 +10,17 @@
   height: 50px;
 }
 
+.header__middle{
+  height: 92px;
+}
+
+.header__bottom{
+  background: #F7F8FA;
+  height: 67px;
+  display: flex;
+  align-items: center;
+}
+
 .header__wrapper{
   width: 100%;
   background: $green;
@@ -43,10 +54,27 @@
   font-size: 0;
 }
 
-
-.header__middle{
-  height: 90px;
+.header__nav{
   display: flex;
-  justify-content: space-between;
+}
+
+.header__nav-link{
+  margin-right: 22px;
+  &:last-child{
+    margin-right: 0;
+  }
+}
+
+
+.grid{
+  display: grid;
+  grid-template-columns: 260px 582px 1fr;
   align-items: center;
+  grid-gap: 7px;
+}
+
+
+.grid__item--last{
+  place-self: end;
+  align-self: center;
 }

@@ -1,20 +1,13 @@
 import React from 'react';
 import Logo from '../image/logo.svg';
 import Sidebar from './sidebar.jsx';
-
 import Search from './search.jsx';
 
-class Item extends React.Component {
-    render() {
-        return (
-            <li className={'menu__item'}>
-                <a className={'menu__link' + (this.props.activeState ? this.props.activeState : '')}
-                   href={this.props.href}>{this.props.name}</a>
-            </li>
+import Shop from '../image/shop.svg'
+import NotificationLogo from '../image/Notification.svg'
+import Avatar from '../image/avatar.svg'
 
-        )
-    }
-}
+import Menu from './menu.jsx'
 
 class HeaderTop extends React.Component {
     constructor(props) {
@@ -56,38 +49,54 @@ class Header extends React.Component {
             <header className={'header'}>
                 <HeaderTop/>
                 <div className={'container'}>
-                    <div className={'header__middle'}>
-                        <div className={'logo'}>
-                            <a className={'logo__link'} href={'/'}>Компания
-                                <img className={'logo__image'} src={Logo} alt={'Компания'}/>
-                            </a>
+                    <div className={'header__middle grid'}>
+                        <div className={'grid__item'}>
+                            <div className={'logo'}>
+                                <a className={'logo__link'} href={'/'}>Компания
+                                    <img className={'logo__image'} src={Logo} alt={'Компания'}/>
+                                </a>
+                            </div>
                         </div>
-                       <Search/>
-                        <div>
-                            <a href={'/'}></a>
-                            <a href={'/'}></a>
-                            <a href={'/'}></a>
+                        <div className={'grid__item'}>
+                            <Search/>
+                        </div>
+                        <div className={'grid__item grid__item--last'}>
+                            <div className={'header__nav'}>
+                                <a href={'/'} className={'header__nav-link'}>
+                                    <img src={Shop}/>
+                                </a>
+                                <a href={'/'} className={'header__nav-link'}>
+                                    <img src={NotificationLogo}/>
+                                </a>
+                                <a href={'/'} className={'header__nav-link'}>
+                                    <img src={Avatar}/>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
+                <div className={'header__bottom'}>
+                    <div className={'container'}>
+                        <div>
+                            <div className={'grid'}>
+                                <div className={'grid__item'}>
+                                    <Sidebar/>
+                                </div>
+                                <div className={'grid__item'}>
+                                    <Menu/>
+                                </div>
+                            </div>
+                        </div>
 
-                <nav className={'menu'}>
-                    <ul className={'menu__list'}>
-                        <Item name={'HOME'} href={'/'} activeState={' menu__link--active'}/>
-                        <Item name={'SHOP'} href={'/'}/>
-                        <Item name={'BLOG'} href={'/'}/>
-                        <Item name={'ABOUT'} href={'/'}/>
-                        <Item name={'CONTACT US'} href={'/'}/>
-                    </ul>
-                </nav>
+                    </div>
 
-                <div>
-                    <Sidebar/>
                 </div>
-            </header>
-    )
-    }
-    }
 
-    export default Header;
+
+            </header>
+        )
+    }
+}
+
+export default Header;
