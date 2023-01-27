@@ -1,0 +1,52 @@
+@use 'base';
+
+.header__top{
+  font-size: 16px;
+  line-height: 19px;
+  color: $white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+
+.header__wrapper{
+  width: 100%;
+  background: $green;
+}
+
+.top__right{
+  display: flex;
+}
+
+.top__select{
+  color: $white;
+  background: none;
+  border: 0;
+  font-size: 16px;
+  line-height: 19px;
+  cursor: pointer;
+}
+
+.top__link{
+  color: $white;
+}
+
+.top__list-links{
+  margin-left: 20px;
+  padding-left: 20px;
+  border-left: 2.2px solid $white;
+  border-radius: 0.4px;
+}
+
+.logo__link{
+  font-size: 0;
+}
+
+
+.header__middle{
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

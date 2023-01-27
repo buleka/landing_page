@@ -1,12 +1,23 @@
 @import 'reset-css';
-@import url('https://fonts.cdnfonts.com/css/montserrat');
-@import './header.scss';
+@import 'base';
 
-$body-color: red;
+@import url('https://fonts.cdnfonts.com/css/Rubik');
+@import './header.scss';
+@import './search.scss';
+
+
 
 body {
-  color: $body-color;
+  font-family: 'Rubik';
   font-style: normal;
+  font-weight: 400;
+  font-feature-settings: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+a{
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .container{

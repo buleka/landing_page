@@ -2,6 +2,7 @@ import React from 'react';
 import Logo from '../image/logo.svg';
 import Sidebar from './sidebar.jsx';
 
+import Search from './search.jsx';
 
 class Item extends React.Component {
     render() {
@@ -15,6 +16,35 @@ class Item extends React.Component {
     }
 }
 
+class HeaderTop extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+
+    render() {
+        return (
+            <div className={'header__wrapper'}>
+                <div className={'container'}>
+                    <div className={'header__top'}>
+                        <div>Welcome to our online shop</div>
+                        <div className={'top__right'}>
+                            <div>
+                                <select className={'top__select'}>
+                                    <option value={'eng'}>English (USD)</option>
+                                    <option value={'rus'}>Rus (RUB)</option>
+                                </select>
+                            </div>
+                            <div className={'top__list-links'}><a className={'top__link'} href={'/'}>Login</a> or <a
+                                className={'top__link'}
+                                href={'/'}>Sign up</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        )
+    }
+}
+
 class Header extends React.Component {
 
     constructor(props) {
@@ -24,30 +54,23 @@ class Header extends React.Component {
     render() {
         return (
             <header className={'header'}>
-                <div>
-                    Welcome to our online shop
-
-                    English (USD)
-
-                    Login or Sign up
-
-                </div>
-                <div>
-                    <div className={'logo'}>
-                        <a className={'logo__link'} href={'/'}>Компания
-                            <img className={'logo__image'} src={Logo} alt={'Компания'}/>
-                        </a>
-                    </div>
-                    <div>
-                        <input type={'search'}/>
-
-                    </div>
-                    <div>
-                        <a href={'/'}></a>
-                        <a href={'/'}></a>
-                        <a href={'/'}></a>
+                <HeaderTop/>
+                <div className={'container'}>
+                    <div className={'header__middle'}>
+                        <div className={'logo'}>
+                            <a className={'logo__link'} href={'/'}>Компания
+                                <img className={'logo__image'} src={Logo} alt={'Компания'}/>
+                            </a>
+                        </div>
+                       <Search/>
+                        <div>
+                            <a href={'/'}></a>
+                            <a href={'/'}></a>
+                            <a href={'/'}></a>
+                        </div>
                     </div>
                 </div>
+
 
                 <nav className={'menu'}>
                     <ul className={'menu__list'}>
@@ -63,8 +86,8 @@ class Header extends React.Component {
                     <Sidebar/>
                 </div>
             </header>
-        )
+    )
     }
-}
+    }
 
-export default Header;
+    export default Header;

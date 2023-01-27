@@ -8,9 +8,7 @@ class Template extends React.Component {
     render() {
         return (
             <div>
-                <div className={'container'}>
-                    <Header/>
-                </div>
+                <Header/>
                 <main>
                 </main>
             </div>
