@@ -1,11 +1,14 @@
 import React from 'react'
+import MenuLogo from '../image/menu1.svg'
 
 class Item extends React.Component {
     render() {
         return (
             <li className={'sidebar__item' + (this.props.activeState ? this.props.activeState : '')}>
                 <a className={'sidebar__link'}
-                   href={this.props.href}>{this.props.name}</a>
+                   href={this.props.href}>
+                    {this.props.activeState ? <img className={'sidebar__item-image'} src={MenuLogo}/> : ''}
+                    {this.props.name}</a>
             </li>
         )
     }
@@ -14,7 +17,7 @@ class Item extends React.Component {
 class Sidebar extends React.Component {
     render() {
         return (
-            <div>
+            <div className={'sidebar'}>
                 <nav>
                     <ul className={'sidebar__list'}>
                         <Item name={'ALL COLLECTIONS'} activeState={' sidebar__item--active'}/>

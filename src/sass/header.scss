@@ -15,10 +15,8 @@
 }
 
 .header__bottom{
-  background: #F7F8FA;
+  background: $background-gray;
   height: 67px;
-  display: flex;
-  align-items: center;
 }
 
 .header__wrapper{
@@ -70,9 +68,13 @@
   display: grid;
   grid-template-columns: 260px 582px 1fr;
   align-items: center;
+  align-content: center;
   grid-gap: 7px;
 }
 
+.grid__item{
+  height: 100%;
+}
 
 .grid__item--last{
   place-self: end;

@@ -1,8 +1,14 @@
 @use 'base';
 
+.menu{
+
+}
+
 .menu__list{
   display: flex;
+  height: 67px;
   margin-left: 75px;
+  align-items: center;
 }
 
 .menu__item{
