@@ -4,6 +4,7 @@ import React from 'react'
 import Header from './header.jsx';
 import GalleryTop from './galleryTop.jsx'
 import ListLinks from './listLinks.jsx'
+import Banners from './banners.jsx'
 
 class Template extends React.Component {
     render() {
@@ -19,6 +20,7 @@ class Template extends React.Component {
                             </div>
                         </div>
                         <ListLinks/>
+                        <Banners/>
                     </div>
                 </main>
             </div>
