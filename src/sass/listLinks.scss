@@ -1,0 +1,36 @@
+.list-links{
+  margin-top: 70px;
+  display: flex;
+
+}
+
+.list-links__item{
+  display: flex;
+  align-items: center;
+  margin-right: 107px;
+  &:last-child{
+    margin-right: 0;
+  }
+
+}
+
+.list-links__img{
+  height: 58px;
+  display: block;
+  margin-right: 15px;
+}
+
+.list-links__title{
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: #555555;
+  display: block;
+}
+
+.list-links__caption{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: rgba(81, 81, 81, 0.71);
+}

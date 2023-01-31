@@ -3,6 +3,7 @@ import React from 'react'
 
 import Header from './header.jsx';
 import GalleryTop from './galleryTop.jsx'
+import ListLinks from './listLinks.jsx'
 
 class Template extends React.Component {
     render() {
@@ -17,6 +18,7 @@ class Template extends React.Component {
                                 <GalleryTop/>
                             </div>
                         </div>
+                        <ListLinks/>
                     </div>
                 </main>
             </div>
