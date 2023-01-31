@@ -42,7 +42,7 @@ module.exports = {
       },
       {
         test: /\.(png|jpg|ttf|eot|woff|woff2)$/,
-        loader: 'file-loader',
+        type: 'asset/resource'
       },
       {
         test: /\.s[ac]ss$/i,
