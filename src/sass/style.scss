@@ -10,6 +10,10 @@
 @import "./galleryTop.scss";
 @import './listLinks.scss';
 @import './banners.scss';
+@import "./tabs.scss";
+@import "./feed.scss";
+@import "./section.scss";
+@import "./timer.scss";
 
 body {
   font-family: 'Rubik';
@@ -32,4 +36,8 @@ a{
 .container{
   width: 1170px;
   margin: auto;
+}
+
+.hidden{
+  display: none;
 }

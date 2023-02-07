@@ -1,0 +1,126 @@
+.section{
+  margin-top: 99px;
+}
+
+.section__title {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 45px;
+  color: #555555;
+  display: flex;
+  justify-content: center;
+}
+
+
+.section__grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 30px;
+  margin-top: 60px;
+}
+
+.section__item{
+  position: relative;
+}
+
+.section__item-wrapper{
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 28px 24px;
+  box-sizing: border-box;
+}
+
+.section__item-special{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 64px;
+  height: 23px;
+  background: #00B7F1;
+  border-radius: 0px 0px 5px 0px;
+  color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 130%;
+  letter-spacing: 0.008em;
+}
+
+.section__item__title{
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 28px;
+  color: #555555;
+  margin-bottom: 11px;
+}
+
+.section__item__caption{
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #757575;
+  display: block;
+  margin-bottom: 23px;
+  width: 227px;
+
+}
+
+.section__item__link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 91px;
+  height: 26px;
+  background: #7AC751;
+  border-radius: 2px;
+  color: $white;
+
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.section__item__grid{
+  display: flex;
+  justify-content:space-between;
+  margin-bottom: 31px;
+  margin-bottom: 23px;
+}
+
+.section__item__price{
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 120%;
+
+  text-align: center;
+  letter-spacing: 0.005em;
+  text-decoration-line: line-through;
+  color: #CCCCCC;
+
+  margin-right: 7px;
+
+  &:last-child{
+    margin-right: 0;
+  }
+}
+
+.section__item__price--green{
+  color: $green;
+  text-decoration-line: none;
+}

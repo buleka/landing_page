@@ -5,6 +5,10 @@ import Header from './header.jsx';
 import GalleryTop from './galleryTop.jsx'
 import ListLinks from './listLinks.jsx'
 import Banners from './banners.jsx'
+import Tabs from './tabs.jsx'
+import Section from './section.jsx'
+import Section2 from './section2.jsx'
+
 
 class Template extends React.Component {
     render() {
@@ -21,6 +25,9 @@ class Template extends React.Component {
                         </div>
                         <ListLinks/>
                         <Banners/>
+                        <Tabs/>
+                        <Section/>
+                        <Section2/>
                     </div>
                 </main>
             </div>

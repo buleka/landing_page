@@ -1,0 +1,30 @@
+@use 'base';
+
+.tabs {
+  margin-top: 120px;
+}
+
+.tabs__list {
+  margin-top: 45px;
+  margin-bottom: 73px;
+  display: flex;
+  justify-content: center;
+}
+
+.tabs__item {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  color: #C2C2C2;
+  margin-right: 72px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.tabs__item--active {
+  color: #7AC751;
+}
