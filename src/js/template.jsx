@@ -9,6 +9,7 @@ import Tabs from './tabs.jsx'
 import Section from './section.jsx'
 import Section2 from './section2.jsx'
 import Testimonails from './testimonials.jsx'
+import Blogs from './blogs.jsx';
 
 class Template extends React.Component {
     render() {
@@ -29,6 +30,7 @@ class Template extends React.Component {
                         <Section/>
                         <Section2/>
                         <Testimonails/>
+                        <Blogs/>
                     </div>
                 </main>
             </div>

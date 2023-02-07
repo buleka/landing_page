@@ -22,6 +22,12 @@
   margin-top: 60px;
 }
 
+.section__grid--sm{
+  grid-column-gap: 26px;
+  grid-row-gap: 22px;
+  margin-top: 56px;
+}
+
 .section__item{
   position: relative;
 }
