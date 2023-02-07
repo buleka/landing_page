@@ -1,0 +1,93 @@
+@use 'base';
+
+.testimonails{
+margin-top: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonails__item{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 816px;
+  height: 312px;
+  background: #F8FAFB;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 0 125px;
+  margin: 0 29px;
+}
+
+.testimonails__image{
+  display: block;
+  transform: translate3d(0, -47%, 0);
+}
+
+.testimonails__text_wrapper{
+  margin-top: -9px;
+}
+
+.testimonails__text{
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  /* or 24px */
+
+  text-align: center;
+  letter-spacing: 0.005em;
+
+  /* Light/Text Color/Body 1 */
+
+  color: #515151;
+  margin-bottom: 32px;
+}
+
+.testimonails__title{
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  /* identical to box height, or 29px */
+
+  text-align: center;
+  letter-spacing: 0.005em;
+
+  /* Primary */
+
+  color: #555555;
+  margin-bottom: 8px;
+
+}
+
+.testimonails__caption{
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  /* identical to box height, or 20px */
+
+  text-align: center;
+  letter-spacing: 0.005em;
+
+  /* Light/Text Color/Body 1 */
+
+  color: #515151;
+
+}
+
+.testimonails__button{
+  font-size: 0;
+  width: 76px;
+  height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
