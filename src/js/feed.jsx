@@ -22,15 +22,12 @@ class Item extends React.Component {
         return (
             <div>
                 <a href={'/'} className={'feed__item-link'}
-                   // onMouseEnter={() => {this.setState({showBlock:true})}}
-                   // onMouseLeave={() => {this.setState({showBlock: false})}}
-                >
+                   onMouseEnter={() => {this.setState({showBlock:true})}}
+                   onMouseLeave={() => {this.setState({showBlock: false})}}>
                     <div className={'feed__type' + (this.props.type === 'Sale' ? ' feed__type--green' : '')}>{this.props.type}</div>
                     <div className={'feed__image-wrapper'}>
                         <img className={'feed__image'} src={Photo1}/>
-                        <div className={'feed__link-list-wrapper' }
-                            // + (this.state.showBlock ? '': ' hidden')}
-                        >
+                        <div className={'feed__link-list-wrapper' + (this.state.showBlock ? '': ' hidden')}>
                             <ul className={'feed__link-list' }>
                                 <li className={'feed__link-item'}>
                                     <a className={'feed__link-sm'} href={'/'}>
