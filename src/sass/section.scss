@@ -2,6 +2,14 @@
   margin-top: 99px;
 }
 
+.section--m{
+  margin-top: 120px;
+}
+
+.section--s{
+  margin-top: 115px;
+}
+
 .section__title {
   font-family: 'Mulish';
   font-style: normal;
@@ -30,6 +38,9 @@
 
 .section__item{
   position: relative;
+  img{
+    display: block;
+  }
 }
 
 .section__item-wrapper{

@@ -90,6 +90,8 @@ class Feed extends React.Component {
                     <Item type={'Sale'} category={'Chair'}/>
                     <Item type={'Sale'} category={'Chair'}/>
                     <Item type={'Sale'} category={'Chair'}/>
+                    <Item type={'Sale'} category={'Chair'}/>
+                    <Item type={'Sale'} category={'Chair'}/>
                 </div>
                 {this.props.dots ?
                     <div className={'dots-big'}>

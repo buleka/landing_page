@@ -16,7 +16,7 @@ class Section2 extends React.Component {
 
     render() {
         return (
-            <section className={'section'}>
+            <section className={'section section--m'}>
                 <h2 className={'section__title'}>OUR PRODUCTS</h2>
                 <ul className={'tabs__list'}>
                     <TabItem title={'All Products'} externalClass={'tabs__item--active'}/>

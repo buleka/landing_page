@@ -10,6 +10,8 @@ import Section from './section.jsx'
 import Section2 from './section2.jsx'
 import Testimonails from './testimonials.jsx'
 import Blogs from './blogs.jsx';
+import Footer from "./footer.jsx";
+
 
 class Template extends React.Component {
     render() {
@@ -33,6 +35,7 @@ class Template extends React.Component {
                         <Blogs/>
                     </div>
                 </main>
+                <Footer/>
             </div>
         )
     }

@@ -9,7 +9,7 @@ import ArrowPrev from '../image/arrow-big-prev.svg'
 class Testimonails extends React.Component {
     render() {
         return (
-            <section className={'section'}>
+            <section className={'section section--m'}>
                 <div>
                     <h2 className={'section__title'}>What Our Customer Says</h2>
                     <div className={'testimonails'}>

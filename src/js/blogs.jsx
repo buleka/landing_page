@@ -38,7 +38,7 @@ class Template extends React.Component {
     }
     render() {
         return (
-            <section className={'section'}>
+            <section className={'section section--s'}>
                 <h2 className={'section__title'}>Our Latest Articles</h2>
                 <div className={'section__grid section__grid--sm'}>
                     <Item img={Card1} tag={'Furniture'} date={'23 September 2022'} title={'Begineer guide buying minimal sofa'}/>

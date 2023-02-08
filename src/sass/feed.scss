@@ -145,7 +145,7 @@
 .dots-big {
   display: flex;
   justify-content: center;
-  margin-top: 58px;
+  margin-top: 54px;
 }
 
 .dots-big__item {
@@ -160,6 +160,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   margin-top: 50px;
+  grid-column-gap: 30px;
 
   form{
     grid-column-start: 3;
