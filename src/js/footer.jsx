@@ -63,7 +63,7 @@ class Footer extends React.Component {
                                     <Link title={'Track Your Order'}/>
                                 </ul>
                             </div>
-                            <div>
+                            <div className={'footer__col--second'}>
                                 <ul>
                                     <li className={'footer__item-bold'}>Store</li>
                                     <Link title={'Furniture'}/>
@@ -72,7 +72,7 @@ class Footer extends React.Component {
                                     <Link title={'Other'}/>
                                 </ul>
                             </div>
-                            <div>
+                            <div className={'footer__col--last'}>
                                 <ul>
                                     <li className={'footer__item-bold'}>Supports</li>
                                     <Link title={'Feedbcak'}/>
@@ -87,10 +87,10 @@ class Footer extends React.Component {
                 <div className={'footer__bottom'}>
                     <div className={'container'}>
                         <div className={'footer__grid--bottom'}>
-                            <div>
+                            <div className={'footer__bottom_text'}>
                                 © 2021 Funking - All rights reserved.
                             </div>
-                            <div className={'footer__bottom_text'}>
+                            <div className={'footer__bottom_list--h'}>
                                 <span>Privacy</span>
                                 <span>Security</span>
                                 <span>Terms</span>

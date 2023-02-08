@@ -30,19 +30,14 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.svg$/i,
-        use: [
-          {
-            loader: 'svg-url-loader',
-            options: {
-            }
-          },
-        ],
-
+        test: /\.(png|jp(e*)g|ttf|eot|woff|woff2)$/,
+        type: 'asset/resource'
       },
       {
-        test: /\.(png|jpg|jpeg|ttf|eot|woff|woff2)$/,
-        type: 'asset/resource'
+        test: /\.svg$/i,
+        issuer: /\.[jt]sx?$/,
+        use: ['@svgr/webpack', 'url-loader'],
+        // use: ['@svgr/webpack'],
       },
       {
         test: /\.s[ac]ss$/i,

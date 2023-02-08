@@ -1,11 +1,11 @@
-import React from 'react'
+import React, {Component} from 'react'
 import Photo1 from '../photos/photoT1.jpeg'
 import Star from '../image/star.svg'
 
-import Compare from '../image/Compare.svg'
-import Favourite from '../image/Favourite.svg'
-import ShopSm from '../image/ShopSm.svg'
-import View from '../image/View.svg'
+import {ReactComponent as Compare}  from '../image/Compare.svg'
+import {ReactComponent as Favourite} from '../image/Favourite.svg'
+import {ReactComponent as ShopSm} from '../image/ShopSm.svg'
+import {ReactComponent as View} from '../image/View.svg'
 import Circle from '../image/circle.svg';
 import CircleGreen from '../image/circleGreen.svg';
 
@@ -22,31 +22,34 @@ class Item extends React.Component {
         return (
             <div>
                 <a href={'/'} className={'feed__item-link'}
-                   onMouseEnter={() => {this.setState({showBlock:true})}}
-                   onMouseLeave={() => {this.setState({showBlock: false})}}>
+                   // onMouseEnter={() => {this.setState({showBlock:true})}}
+                   // onMouseLeave={() => {this.setState({showBlock: false})}}
+                >
                     <div className={'feed__type' + (this.props.type === 'Sale' ? ' feed__type--green' : '')}>{this.props.type}</div>
                     <div className={'feed__image-wrapper'}>
                         <img className={'feed__image'} src={Photo1}/>
-                        <div className={'feed__link-list-wrapper' + (this.state.showBlock ? '': ' hidden')}>
+                        <div className={'feed__link-list-wrapper' }
+                            // + (this.state.showBlock ? '': ' hidden')}
+                        >
                             <ul className={'feed__link-list' }>
                                 <li className={'feed__link-item'}>
                                     <a className={'feed__link-sm'} href={'/'}>
-                                        <img src={Favourite}/>
+                                       <Favourite className={'feed__link_img'}/>
                                     </a>
                                 </li>
                                 <li className={'feed__link-item'}>
                                     <a className={'feed__link-sm'} href={'/'}>
-                                        <img src={ShopSm}/>
+                                        <ShopSm className={'feed__link_img'}/>
                                     </a>
                                 </li>
                                 <li className={'feed__link-item'}>
                                     <a className={'feed__link-sm'} href={'/'}>
-                                        <img src={Compare}/>
+                                        <Compare className={'feed__link_img'}/>
                                     </a>
                                 </li>
                                 <li className={'feed__link-item'}>
                                     <a className={'feed__link-sm'} href={'/'}>
-                                        <img src={View}/>
+                                        <View className={'feed__link_img'}/>
                                     </a>
                                 </li>
                             </ul>
