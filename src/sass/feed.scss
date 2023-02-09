@@ -78,6 +78,25 @@
 
 }
 
+.feed__rating__item {
+  path {
+    stroke: #CCCCCC;
+    transition: 0.2s ease stroke;
+  }
+
+  &:hover {
+    path {
+      stroke: $green;
+    }
+  }
+}
+
+.feed__rating__item--active {
+  path {
+    stroke: $green;
+  }
+}
+
 
 .feed__type {
   width: 44.68px;
@@ -101,6 +120,10 @@
 
 .feed__type--green {
   background: $green;
+}
+
+.feed__type--red{
+  background: #FF6868;
 }
 
 .feed__caption-wrapper {

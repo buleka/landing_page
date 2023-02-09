@@ -39,11 +39,46 @@ class Tabs extends React.Component {
     }
 
     render() {
+        const types = [
+            {
+                type: 'New',
+                class: ''
+            },
+            {
+                type: 'New',
+                class: ''
+            },
+            {
+                type: 'Sale',
+                class: 'green'
+            },
+            {
+                type: 'Sale',
+                class: 'green'
+            },
+            {
+                type: 'Sale',
+                class: 'green'
+            },
+            {
+                type: 'Sale',
+                class: 'green'
+            },
+            {
+                type: 'New',
+                class: ''
+            },
+            {
+                type: 'New',
+                class: ''
+            }
+        ]
+
         return (
             <section className={'tabs'}>
                 <h2 className={'section__title'}>TRENDING</h2>
                 <TabList/>
-                <Feed dots={true}/>
+                <Feed dots={true} types={types}/>
             </section>
         )
     }

@@ -15,6 +15,40 @@ class Section2 extends React.Component {
 
 
     render() {
+        const types = [
+            {
+                type: 'Sale',
+                class: 'green'
+            },
+            {
+                type: 'New',
+                class: ''
+            },
+            {
+                type: '-30%',
+                class: 'red'
+            },
+            {
+                type: 'Sale',
+                class: 'green'
+            },
+            {
+                type: '-30%',
+                class: 'red'
+            },
+            {
+                type: 'Sale',
+                class: 'green'
+            },
+            {
+                type: 'New',
+                class: ''
+            },
+            {
+                type: 'New',
+                class: ''
+            }
+        ]
         return (
             <section className={'section section--m'}>
                 <h2 className={'section__title'}>OUR PRODUCTS</h2>
@@ -24,7 +58,7 @@ class Section2 extends React.Component {
                     <TabItem title={'New Arrivals'}/>
                     <TabItem title={'Todays Deals'}/>
                 </ul>
-                <Feed dots={false}/>
+                <Feed dots={false} types={types}/>
                 <div className={'feed-pagination'}>
                     <form>
                         <a href={'/'} className={'feed-pagination__button'}>Next page
